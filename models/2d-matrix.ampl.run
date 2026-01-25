@@ -1,0 +1,26 @@
+option gurobi_options 'presolve=2 iis=1 outlev=1';
+
+option presolve 0;
+option show_stats 2;
+
+display N;
+
+solve;
+
+# display X;
+
+printf "Solution\n";
+printf "========\n";
+
+for {i in 1..N}
+{
+    printf "%2d ", i;
+    for {j in 1..N}
+    {
+        if X[i, j] > 0 then
+        {
+            printf "%2d ", j;
+        }
+    }
+    printf "\n";
+}
