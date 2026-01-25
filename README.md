@@ -18,5 +18,15 @@
 > **AMPL (A Mathematical Programming Language)** is an algebraic modeling language to describe and solve high-complexity problems for large-scale mathematical computing (e.g. large-scale optimization and scheduling-type problems). It was developed by Robert Fourer, David Gay, and Brian Kernighan at Bell Laboratories. AMPL supports dozens of solvers, both open source and commercial software, including CBC, CPLEX, FortMP, MOSEK, MINOS, IPOPT, SNOPT, KNITRO, and LGO. Problems are passed to solvers as nl files. AMPL is used by more than 100 corporate clients, and by government agencies and academic institutions.
 >
 > Wikipedia: [AMPL](https://en.wikipedia.org/wiki/AMPL)
->
-> 
+
+
+
+## AMPL models
++ [Model using the **alldiff** constraint](./models/alldiff.ampl)
++ [Model using the **two-dimensional binary matrix**](./models/2d-matrix.ampl)
+
+
+## References
++ [AMPL Company](https://ampl.com/)
++ [AMPL Book: A Modeling Language for Mathematical Programming](https://ampl.com/wp-content/uploads/BOOK.pdf)
++ [N-Queens example with AMPL and HiGHS with amplpy](https://github.com/fdabrandao/streamlit-nqueens)
