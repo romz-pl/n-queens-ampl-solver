@@ -1,0 +1,319 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18292962
+   Password : GiUBxrcT
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:11:40
+   End      : 2026-01-28 15:12:04
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-6.neos-server.org
+N = 200
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+200 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 200 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 200 variables (200 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  400 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 120604 variables (603 integer, 120000 binary);
+Objectives: 1 linear; 
+Constraints:  2198 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 2198 rows, 120604 columns and 361196 nonzeros
+Model fingerprint: 0x824eb0a9
+Variable types: 404 continuous, 120200 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 4 rows and 405 columns (presolve time = 5s)...
+Presolve removed 4 rows and 44419 columns (presolve time = 10s)...
+Presolve removed 603 rows and 80402 columns
+Presolve time: 14.92s
+Presolved: 1595 rows, 40202 columns, 240211 nonzeros
+Variable types: 0 continuous, 40202 integer (40002 binary)
+Root relaxation presolve removed 202 rows and 3 columns
+Root relaxation presolved: 1393 rows, 40199 columns, 199811 nonzeros
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   3.162500e+02   1.526070e+09     15s
+   24357    0.0000000e+00   0.000000e+00   0.000000e+00     17s
+Concurrent spin time: 0.63s (can be avoided by choosing Method=3)
+
+Solved with primal simplex
+   24357    0.0000000e+00   0.000000e+00   0.000000e+00     17s
+
+Root relaxation: objective 0.000000e+00, 24357 iterations, 2.36 seconds (2.25 work units)
+Total elapsed time = 21.36s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -   21s
+
+Explored 1 nodes (65753 simplex iterations) in 21.88 seconds (21.56 work units)
+Thread count was 4 (of 72 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 0
+65753 simplex iterations
+1 branching node
+Solution
+========
+ 1 36
+ 2 178
+ 3 108
+ 4 48
+ 5 142
+ 6 160
+ 7 91
+ 8 154
+ 9 59
+10 78
+11 159
+12 153
+13 115
+14 81
+15 56
+16 42
+17 26
+18 137
+19 84
+20 186
+21 60
+22 114
+23 89
+24 113
+25 67
+26 96
+27 145
+28 173
+29 92
+30 156
+31 87
+32 175
+33 58
+34 52
+35 129
+36 127
+37 199
+38 172
+39 41
+40 111
+41 98
+42 100
+43 86
+44 31
+45 168
+46 79
+47  2
+48 163
+49 177
+50 146
+51 158
+52 88
+53 170
+54 13
+55 148
+56 162
+57  4
+58  8
+59 51
+60 187
+61 169
+62 69
+63 83
+64 10
+65 37
+66 33
+67 155
+68 99
+69 39
+70 130
+71 171
+72 188
+73 120
+74 19
+75 124
+76 200
+77 80
+78 93
+79 102
+80 63
+81 167
+82 66
+83 71
+84 132
+85 195
+86 15
+87 72
+88 126
+89 90
+90 55
+91 107
+92 40
+93 12
+94 189
+95 18
+96 23
+97 131
+98 75
+99 151
+100 76
+101 165
+102 123
+103 182
+104 194
+105 45
+106 118
+107 161
+108 25
+109 103
+110 191
+111 27
+112  3
+113 47
+114 190
+115 134
+116 116
+117 70
+118 38
+119  1
+120 14
+121 176
+122 22
+123 35
+124 73
+125 149
+126 179
+127 64
+128 197
+129  6
+130 44
+131 106
+132 17
+133 61
+134 97
+135 164
+136 32
+137 46
+138 133
+139 143
+140 62
+141 121
+142 50
+143 95
+144 150
+145 141
+146 43
+147 193
+148 29
+149 128
+150 85
+151 140
+152 112
+153 180
+154 136
+155 192
+156 125
+157 101
+158 11
+159 49
+160 24
+161 82
+162 20
+163 185
+164 138
+165 104
+166 198
+167 54
+168  7
+169 147
+170 183
+171 34
+172 16
+173 105
+174 184
+175 174
+176 119
+177 135
+178 144
+179 65
+180  5
+181 53
+182 196
+183 109
+184 68
+185 166
+186  9
+187 30
+188 77
+189 157
+190 181
+191 28
+192 122
+193 117
+194 21
+195 94
+196 74
+197 139
+198 152
+199 110
+200 57
+
+NEOS Server Home
+

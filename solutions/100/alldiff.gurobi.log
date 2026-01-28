@@ -1,0 +1,203 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18292961
+   Password : ltuGVrhP
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:10:48
+   End      : 2026-01-28 15:10:54
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-6.neos-server.org
+N = 100
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+100 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 100 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 100 variables (100 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  200 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 30304 variables (303 integer, 30000 binary);
+Objectives: 1 linear; 
+Constraints:  1098 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 1098 rows, 30304 columns and 90596 nonzeros
+Model fingerprint: 0x9fce06a6
+Variable types: 204 continuous, 30100 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+Presolve removed 310 rows and 20207 columns
+Presolve time: 2.37s
+Presolved: 788 rows, 10097 columns, 59414 nonzeros
+Variable types: 0 continuous, 10097 integer (10000 binary)
+Root relaxation presolve removed 98 rows and 1 columns
+Root relaxation presolved: 690 rows, 10096 columns, 49614 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 1070 iterations, 0.17 seconds (0.24 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    3s
+
+Explored 1 nodes (20034 simplex iterations) in 3.45 seconds (3.39 work units)
+Thread count was 4 (of 72 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 0
+20034 simplex iterations
+1 branching node
+Solution
+========
+ 1 77
+ 2 68
+ 3 27
+ 4 37
+ 5 85
+ 6 40
+ 7 92
+ 8 57
+ 9  8
+10 38
+11 46
+12 94
+13 31
+14 71
+15 19
+16  4
+17 43
+18 80
+19 42
+20  1
+21 63
+22 90
+23 70
+24 32
+25 79
+26 95
+27 16
+28 59
+29 99
+30  7
+31 69
+32 35
+33 72
+34 29
+35 60
+36 50
+37  5
+38 78
+39 41
+40 61
+41 33
+42 83
+43 88
+44 10
+45 74
+46  9
+47  3
+48 34
+49 22
+50 14
+51 11
+52 96
+53 58
+54 48
+55 26
+56 13
+57 53
+58 55
+59 75
+60 12
+61 98
+62 47
+63 28
+64 73
+65 97
+66 67
+67  6
+68 15
+69 23
+70 76
+71 93
+72 82
+73  2
+74 87
+75 49
+76 56
+77 17
+78 36
+79 91
+80 62
+81 100
+82 44
+83 20
+84 51
+85 30
+86 21
+87 65
+88 39
+89 89
+90 18
+91 52
+92 64
+93 24
+94 81
+95 45
+96 86
+97 66
+98 25
+99 54
+100 84
+
+NEOS Server Home
+

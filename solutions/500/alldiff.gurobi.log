@@ -1,0 +1,696 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18292964
+   Password : twNbajfE
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:12:59
+   End      : 2026-01-28 15:18:59
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-6.neos-server.org
+N = 500
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+500 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 500 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 500 variables (500 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  1000 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 751504 variables (1503 integer, 750000 binary);
+Objectives: 1 linear; 
+Constraints:  5498 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 5498 rows, 751504 columns and 2252996 nonzeros
+Model fingerprint: 0xdf54d274
+Variable types: 1004 continuous, 750500 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 5e+02]
+  RHS range        [1e+00, 5e+02]
+Presolve removed 4 rows and 1004 columns (presolve time = 5s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 10s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 15s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 31s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 35s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 40s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 45s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 50s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 55s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 60s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 65s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 70s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 75s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 80s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 85s)...
+Presolve removed 4 rows and 1004 columns (presolve time = 94s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 154s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 155s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 160s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 165s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 170s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 175s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 180s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 185s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 190s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 195s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 200s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 205s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 210s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 215s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 220s)...
+Presolve removed 4 rows and 94572 columns (presolve time = 231s)...
+Presolve removed 1503 rows and 501002 columns (presolve time = 235s)...
+Presolve removed 1503 rows and 501002 columns (presolve time = 240s)...
+Presolve removed 1503 rows and 501002 columns (presolve time = 245s)...
+Presolve removed 1503 rows and 501002 columns (presolve time = 250s)...
+Presolve removed 1503 rows and 501002 columns
+Presolve time: 254.17s
+Presolved: 3995 rows, 250502 columns, 1500512 nonzeros
+Variable types: 0 continuous, 250502 integer (250002 binary)
+Root relaxation presolve removed 502 rows and 3 columns
+Root relaxation presolved: 3493 rows, 250499 columns, 1249512 nonzeros
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.15s
+
+Barrier statistics:
+ AA' NZ     : 2.246e+06
+ Factor NZ  : 4.134e+06 (roughly 140 MB of memory)
+ Factor Ops : 6.972e+09 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00 -1.55001875e+03  1.46e+04 0.00e+00  7.51e-01   258s
+   1   0.00000000e+00 -1.78472593e+03  7.46e+03 1.15e-02  3.86e-01   258s
+   2   0.00000000e+00 -1.35775558e+03  1.72e+03 1.35e-03  9.07e-02   259s
+   3   0.00000000e+00 -9.67962219e+02  4.76e+02 4.48e-04  2.64e-02   259s
+   4   0.00000000e+00 -7.32275613e+02  9.72e+01 1.33e-04  6.25e-03   260s
+   5   0.00000000e+00 -6.20757741e+02  3.81e+01 8.35e-05  2.97e-03   260s
+   6   0.00000000e+00 -4.49161418e+02  1.81e+01 3.48e-05  1.57e-03   260s
+   7   0.00000000e+00 -1.52836503e+02  4.61e+00 1.54e-16  3.76e-04   261s
+   8   0.00000000e+00 -2.03023233e+01  7.62e-01 3.24e-16  4.24e-05   261s
+   9   0.00000000e+00 -1.52663748e-01  3.40e-03 2.86e-16  3.04e-07   261s
+  10   0.00000000e+00 -1.52614489e-04  4.80e-07 2.54e-16  3.03e-10   262s
+  11   0.00000000e+00 -1.52614481e-07  1.17e-10 3.10e-16  3.03e-13   262s
+  12   0.00000000e+00 -1.52606954e-10  9.84e-13 1.97e-16  3.03e-16   262s
+
+Barrier solved model in 12 iterations and 262.47 seconds (211.99 work units)
+Optimal objective 0.00000000e+00
+
+  Building initial crossover basis                               265s
+  Building initial crossover basis                               270s
+
+Root crossover log...
+
+     461 DPushes remaining with DInf 0.0000000e+00               271s
+       0 DPushes remaining with DInf 0.0000000e+00               271s
+
+     599 PPushes remaining with PInf 7.7015264e-05               271s
+       0 PPushes remaining with PInf 0.0000000e+00               271s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 0.0000000e+00    271s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    1061    0.0000000e+00   0.000000e+00   0.000000e+00    271s
+Concurrent spin time: 0.00s
+
+Solved with barrier
+    1061    0.0000000e+00   0.000000e+00   0.000000e+00    272s
+
+Root relaxation: objective 0.000000e+00, 1061 iterations, 15.66 seconds (10.20 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2068          -    0.00000      -     -  328s
+H    0     0                       0.0000000    0.00000  0.00%     -  354s
+     0     0    0.00000    0 2068    0.00000    0.00000  0.00%     -  354s
+
+Explored 1 nodes (17800 simplex iterations) in 354.94 seconds (312.53 work units)
+Thread count was 4 (of 72 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+Gurobi 12.0.3: optimal solution; objective 0
+17800 simplex iterations
+12 barrier iterations
+1 branching node
+Solution
+========
+ 1 318
+ 2 457
+ 3 129
+ 4 161
+ 5 360
+ 6 168
+ 7 371
+ 8 135
+ 9 116
+10 147
+11 102
+12 104
+13  5
+14 495
+15 369
+16 72
+17  7
+18 492
+19 248
+20 334
+21 211
+22 162
+23 17
+24 468
+25 136
+26 112
+27 53
+28 289
+29 149
+30 160
+31 496
+32 185
+33 212
+34 384
+35 246
+36 195
+37 203
+38 214
+39 285
+40 176
+41 420
+42 281
+43 97
+44 418
+45 238
+46  3
+47 353
+48 390
+49 265
+50 29
+51 124
+52 320
+53 343
+54 349
+55 125
+56 127
+57  2
+58 336
+59 274
+60 266
+61 73
+62 263
+63 304
+64 487
+65 273
+66 407
+67 44
+68 434
+69 49
+70 337
+71 199
+72 94
+73 450
+74 442
+75 216
+76 497
+77 275
+78 378
+79 416
+80 227
+81 471
+82 394
+83 59
+84 446
+85 255
+86 201
+87 193
+88 26
+89 152
+90 451
+91 90
+92 243
+93 364
+94 461
+95 429
+96 315
+97 374
+98 165
+99 342
+100 63
+101 132
+102 412
+103 69
+104 383
+105 286
+106 95
+107 262
+108 381
+109 379
+110 482
+111 236
+112 10
+113 131
+114 259
+115 158
+116 31
+117 20
+118  1
+119 215
+120 159
+121  9
+122 305
+123 328
+124 196
+125 258
+126 150
+127 270
+128 194
+129 331
+130 387
+131 208
+132 68
+133 476
+134 108
+135 362
+136 156
+137 363
+138 427
+139 415
+140 224
+141 36
+142 61
+143 103
+144 330
+145 490
+146 306
+147 223
+148 242
+149 228
+150 218
+151 157
+152 396
+153 340
+154 293
+155 466
+156 480
+157 351
+158 154
+159 456
+160 122
+161 271
+162 488
+163 43
+164 395
+165 269
+166 355
+167 123
+168 423
+169 30
+170 267
+171 18
+172 252
+173 232
+174 142
+175 23
+176 60
+177 422
+178 46
+179 107
+180 302
+181 169
+182 14
+183 421
+184 300
+185 221
+186 11
+187 198
+188 51
+189 393
+190 87
+191 204
+192 366
+193 414
+194 477
+195 500
+196 448
+197 182
+198 447
+199 254
+200 464
+201 71
+202 143
+203 92
+204 484
+205 397
+206 82
+207 498
+208 81
+209 386
+210 452
+211 332
+212 474
+213 48
+214 439
+215 15
+216 436
+217 84
+218 319
+219 173
+220 443
+221 282
+222 391
+223 260
+224 356
+225 458
+226 28
+227 291
+228 400
+229 42
+230 111
+231 34
+232 321
+233 85
+234 470
+235 475
+236 126
+237 288
+238 24
+239 493
+240 453
+241 141
+242 27
+243 114
+244 178
+245 444
+246 413
+247 376
+248 65
+249 88
+250 179
+251 77
+252 45
+253 128
+254 425
+255 313
+256 118
+257 454
+258 472
+259 324
+260 67
+261 373
+262 440
+263 491
+264 473
+265 41
+266 121
+267 200
+268 346
+269 372
+270 180
+271 268
+272 329
+273 411
+274 206
+275 105
+276 432
+277 191
+278 66
+279 339
+280 264
+281 197
+282 50
+283 486
+284 19
+285 151
+286 144
+287 226
+288 137
+289 316
+290 481
+291 244
+292 209
+293 435
+294 181
+295 109
+296 170
+297 245
+298 398
+299 207
+300 424
+301 70
+302 335
+303 352
+304 338
+305 58
+306 310
+307 272
+308 290
+309 163
+310 460
+311 47
+312 217
+313 465
+314 39
+315 21
+316 404
+317 358
+318 431
+319 327
+320 40
+321 469
+322 370
+323 410
+324 140
+325 89
+326 113
+327 485
+328 80
+329 298
+330 405
+331 359
+332 138
+333 115
+334 83
+335 428
+336 307
+337 91
+338 184
+339 257
+340 357
+341 57
+342 13
+343 489
+344 303
+345 249
+346 188
+347 52
+348 192
+349 280
+350 96
+351 449
+352 64
+353 277
+354 166
+355  4
+356 148
+357 419
+358 62
+359 106
+360 237
+361 54
+362 183
+363 350
+364 499
+365 56
+366 333
+367 253
+368 323
+369 388
+370 279
+371 155
+372 295
+373 146
+374 344
+375 186
+376 322
+377 172
+378 134
+379 462
+380 292
+381 455
+382 284
+383 361
+384 25
+385 430
+386 222
+387 283
+388 478
+389 167
+390 235
+391 187
+392 406
+393 231
+394 177
+395 367
+396 426
+397 93
+398 276
+399 239
+400 403
+401 392
+402  8
+403 133
+404 317
+405 35
+406 37
+407 354
+408 139
+409 308
+410 153
+411 375
+412 74
+413  6
+414 101
+415 408
+416 417
+417 32
+418 233
+419 312
+420 314
+421 459
+422 55
+423 189
+424 368
+425 256
+426 347
+427 299
+428 16
+429 174
+430 445
+431 225
+432 100
+433 483
+434 205
+435 479
+436 441
+437 437
+438 345
+439 229
+440 130
+441 220
+442 240
+443 12
+444 120
+445 382
+446 33
+447 399
+448 210
+449 309
+450 380
+451 294
+452 377
+453 78
+454 311
+455 296
+456 38
+457 110
+458 175
+459 117
+460 171
+461 463
+462 164
+463 75
+464 190
+465 213
+466 325
+467 402
+468 278
+469 467
+470 326
+471 241
+472 433
+473 234
+474 202
+475 219
+476 86
+477 341
+478 301
+479 287
+480 438
+481 401
+482 409
+483 348
+484 76
+485 22
+486 365
+487 261
+488 251
+489 230
+490 250
+491 98
+492 119
+493 79
+494 99
+495 145
+496 247
+497 389
+498 297
+499 494
+500 385
+
+NEOS Server Home
+
