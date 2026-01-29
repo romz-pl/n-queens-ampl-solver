@@ -1,0 +1,109 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18293034
+   Password : OCPzqLpr
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:26:28
+   End      : 2026-01-28 15:32:42
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 600
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+600 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 600 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 600 variables (600 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  1200 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 1081804 variables (1803 integer, 1080000 binary);
+Objectives: 1 linear; 
+Constraints:  6598 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 6598 rows, 1081804 columns and 3243596 nonzeros
+Model fingerprint: 0xedf4b4fe
+Variable types: 1204 continuous, 1080600 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+Presolve removed 4 rows and 1204 columns (presolve time = 5s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 10s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 15s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 20s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 25s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 30s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 58s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 60s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 65s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 70s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 75s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 80s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 85s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 90s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 95s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 100s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 105s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 110s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 115s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 120s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 125s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 130s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 135s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 140s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 145s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 150s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 155s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 160s)...
+Presolve removed 4 rows and 1204 columns (presolve time = 165s)...
+
+Error: Your job was terminated because it exceeded the maximum allotted memory for a job.
+
+Please refer to the NEOS Server FAQ (https://neos-guide.org/content/FAQ) for more information regarding job termination conditions and potential solutions.
+
+NEOS Server Home
+
