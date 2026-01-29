@@ -1,0 +1,229 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18293044
+   Password : naqcNvMi
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:28:05
+   End      : 2026-01-28 18:54:40
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-7.neos-server.org
+N = 700
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+700 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 700 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 2
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 700 variables (700 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  1400 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 1472104 variables (2103 integer, 1470000 binary);
+Objectives: 1 linear; 
+Constraints:  7698 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 64 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  2
+Threads  4
+
+Optimize a model with 7698 rows, 1472104 columns and 4414196 nonzeros
+Model fingerprint: 0x2d6e0fba
+Variable types: 1404 continuous, 1470700 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 7e+02]
+  RHS range        [1e+00, 7e+02]
+Presolve removed 4 rows and 1404 columns (presolve time = 5s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 10s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 15s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 20s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 25s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 30s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 35s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 71s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 75s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 80s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 85s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 90s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 95s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 100s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 105s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 110s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 115s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 120s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 125s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 130s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 135s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 140s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 145s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 150s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 155s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 160s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 165s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 170s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 175s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 180s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 185s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 190s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 195s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 200s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 205s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 210s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 215s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 220s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 225s)...
+Presolve removed 4 rows and 1404 columns (presolve time = 230s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 235s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 240s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 245s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 250s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 255s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 260s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 265s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 270s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 275s)...
+Presolve removed 4 rows and 126099 columns (presolve time = 477s)...
+Presolve removed 4 rows and 129025 columns (presolve time = 530s)...
+Presolve removed 4 rows and 129025 columns (presolve time = 535s)...
+Presolve removed 4 rows and 129025 columns
+Presolve time: 539.32s
+Presolved: 7694 rows, 1343079 columns, 4409997 nonzeros
+Variable types: 0 continuous, 1343079 integer (1342379 binary)
+Root relaxation presolved: 7694 rows, 1343079 columns, 4409997 nonzeros
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.78s
+
+Barrier statistics:
+ AA' NZ     : 3.626e+06
+ Factor NZ  : 1.308e+07 (roughly 600 MB of memory)
+ Factor Ops : 2.842e+10 (roughly 1 second per iteration)
+ Threads    : 2
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00 -2.24116875e+03  9.31e+03 0.00e+00  3.36e-01   550s
+   1   0.00000000e+00 -2.68227391e+03  4.09e+03 3.52e-02  1.51e-01   551s
+   2   0.00000000e+00 -2.86438789e+03  1.31e+03 8.95e-03  4.97e-02   552s
+   3   0.00000000e+00 -2.74695193e+03  6.36e+02 5.21e-03  2.46e-02   553s
+   4   0.00000000e+00 -2.45645953e+03  1.54e+02 2.22e-03  6.57e-03   554s
+   5   0.00000000e+00 -1.99982627e+03  5.50e+01 8.10e-04  2.64e-03   555s
+   6   0.00000000e+00 -1.25594595e+03  9.73e+00 2.10e-04  7.10e-04   556s
+   7   0.00000000e+00 -3.53108696e+02  2.14e+00 3.52e-05  1.53e-04   557s
+   8   0.00000000e+00 -5.85902718e+01  1.07e-01 3.78e-06  2.22e-05   558s
+   9   0.00000000e+00 -3.74643704e-01  3.16e-04 1.10e-08  1.40e-07   559s
+  10   0.00000000e+00 -3.75978838e-04  5.91e-07 5.07e-16  1.40e-10   560s
+  11   0.00000000e+00 -6.52118462e-10  8.44e-08 6.14e-16  2.42e-16   561s
+
+Barrier solved model in 11 iterations and 561.27 seconds (447.57 work units)
+Optimal objective 0.00000000e+00
+
+  Building initial crossover basis                               566s
+  Building initial crossover basis                               571s
+  Building initial crossover basis                               576s
+  Building initial crossover basis                               581s
+  Building initial crossover basis                               586s
+Concurrent spin time: 5.94s (can be avoided by choosing Method=3)
+
+Solved with primal simplex
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+  131216    0.0000000e+00   0.000000e+00   0.000000e+00    592s
+
+Root relaxation: objective 0.000000e+00, 131216 iterations, 48.35 seconds (31.56 work units)
+Total elapsed time = 781.30s (DegenMoves)
+Total elapsed time = 862.17s (DegenMoves)
+Total elapsed time = 952.42s (DegenMoves)
+Total elapsed time = 1008.18s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 2754          -    0.00000      -     - 1116s
+     0     0    0.00000    0 3815          -    0.00000      -     - 1225s
+     0     0    0.00000    0 4202          -    0.00000      -     - 1494s
+     0     0    0.00000    0 4385          -    0.00000      -     - 2112s
+     0     0    0.00000    0 4612          -    0.00000      -     - 2462s
+     0     0    0.00000    0 4686          -    0.00000      -     - 3222s
+     0     0    0.00000    0 4686          -    0.00000      -     - 3495s
+     0     2    0.00000    0 4686          -    0.00000      -     - 4851s
+     1     4    0.00000    1 4483          -    0.00000      - 42248 5044s
+     2     4    0.00000    1 4322          -    0.00000      - 23995 5045s
+     3     6    0.00000    2 4393          -    0.00000      - 24835 5685s
+     5    10    0.00000    2 4594          -    0.00000      - 27770 6798s
+     9    21    0.00000    3 4681          -    0.00000      - 26153 7692s
+    36    47    0.00000    4 4726          -    0.00000      - 10825 7826s
+   116    72    0.00000   10 4527          -    0.00000      -  6315 7981s
+   207   100 infeasible   19               -    0.00000      -  5383 8132s
+   287   143 infeasible   27               -    0.00000      -  5596 8324s
+   373   147    0.00000   33 4306          -    0.00000      -  5977 8640s
+   389   171 infeasible   36               -    0.00000      -  5881 8836s
+   475   180    0.00000   51 4254          -    0.00000      -  5980 9081s
+   496   206    0.00000   51 4317          -    0.00000      -  5960 9286s
+   580   240    0.00000   57 4354          -    0.00000      -  6260 9516s
+   666   263    0.00000   72 4092          -    0.00000      -  6449 9699s
+   733   288    0.00000   72 4177          -    0.00000      -  6805 9905s
+   808   321    0.00000   74 4200          -    0.00000      -  7084 10125s
+   879   354    0.00000   74 4264          -    0.00000      -  7335 10341s
+   957   383 infeasible   86               -    0.00000      -  7670 10525s
+  1044   417    0.00000   92 4071          -    0.00000      -  7677 10661s
+  1140   444 infeasible  101               -    0.00000      -  7453 10811s
+  1236   465    0.00000  111 3957          -    0.00000      -  7309 10980s
+  1331   494    0.00000  119 3941          -    0.00000      -  7335 11158s
+  1408   522    0.00000  126 3920          -    0.00000      -  7519 11349s
+  1496   568    0.00000  143 3775          -    0.00000      -  7528 11518s
+  1579   596 infeasible  151               -    0.00000      -  7607 11660s
+  1675   624 infeasible  161               -    0.00000      -  7498 11817s
+  1759   645 infeasible  170               -    0.00000      -  7499 11973s
+  1848   680    0.00000  181 3588          -    0.00000      -  7543 12161s
+
+Error: Your job was terminated because it exceeded the maximum allotted memory for a job.
+
+Please refer to the NEOS Server FAQ (https://neos-guide.org/content/FAQ) for more information regarding job termination conditions and potential solutions.
+
+NEOS Server Home
+

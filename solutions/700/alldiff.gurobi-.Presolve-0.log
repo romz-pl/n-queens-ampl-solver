@@ -1,0 +1,163 @@
+
+
+*************************************************************
+
+   NEOS Server Version 6.0
+   Job#     : 18293131
+   Password : EJWItdTk
+   User     : 
+   Solver   : milp:Gurobi:AMPL
+   Start    : 2026-01-28 15:47:54
+   End      : 2026-01-28 18:24:17
+   Host     : prod-sub-1.neos-server.org
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information for any particular purpose.
+
+   Announcements:
+*************************************************************
+You are using the solver gurobi_ampl.
+Checking ampl.mod for gurobi_options...
+Checking ampl.com for gurobi_options...
+Executing AMPL.
+processing data.
+processing commands.
+Executing on prod-exec-6.neos-server.org
+N = 700
+
+
+"option presolve 0;" used, but "option presolve 10;" might work better.
+700 variables, all nonlinear
+0 algebraic constraints
+3 logical constraints
+1 linear objective; 700 nonzeros.
+
+Gurobi 12.0.3:   tech:threads = 4
+  pre:solve = 0
+  alg:iisfind = 1
+Set parameter LogToConsole to value 1
+  tech:outlev = 1
+
+AMPL MP initial flat model has 700 variables (700 integer, 0 binary);
+Objectives: 1 linear; 
+Constraints:  1400 linear;
+Logical expressions:  3 alldiff;
+
+AMPL MP final model has 1472104 variables (2103 integer, 1470000 binary);
+Objectives: 1 linear; 
+Constraints:  7698 linear;
+
+
+Set parameter InfUnbdInfo to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (linux64 - "Rocky Linux 8.10 (Green Obsidian)")
+
+CPU model: Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 36 physical cores, 72 logical processors, using up to 4 threads
+
+Non-default parameters:
+InfUnbdInfo  1
+Presolve  0
+Threads  4
+
+Optimize a model with 7698 rows, 1472104 columns and 4414196 nonzeros
+Model fingerprint: 0x2d6e0fba
+Variable types: 1404 continuous, 1470700 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+03]
+  Objective range  [0e+00, 0e+00]
+  Bounds range     [1e+00, 7e+02]
+  RHS range        [1e+00, 7e+02]
+Variable types: 1404 continuous, 1470700 integer (1470000 binary)
+
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 1.12s
+
+Barrier statistics:
+ Dense cols : 1
+ AA' NZ     : 2.946e+06
+ Factor NZ  : 9.326e+06 (roughly 700 MB of memory)
+ Factor Ops : 1.549e+10 (less than 1 second per iteration)
+ Threads    : 2
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   0.00000000e+00 -1.52906250e+03  3.41e+03 0.00e+00  1.24e-01     8s
+   1   0.00000000e+00 -1.75507649e+03  1.92e+03 3.74e-02  7.14e-02     9s
+   2   0.00000000e+00 -2.17458338e+03  1.60e+03 2.95e-03  5.40e-02    10s
+   3   0.00000000e+00 -2.04111346e+03  9.98e+01 6.46e-05  3.96e-03    11s
+   4   0.00000000e+00 -1.64015291e+03  2.69e+01 1.39e-17  1.33e-03    12s
+   5   0.00000000e+00 -1.15959309e+03  2.24e+01 1.22e-17  9.13e-04    12s
+   6   0.00000000e+00 -9.82442552e+02  1.14e+01 9.81e-18  5.75e-04    13s
+   7   0.00000000e+00 -8.27815985e+02  8.01e+00 9.22e-18  4.35e-04    14s
+   8   0.00000000e+00 -4.66786630e+02  4.82e+00 5.23e-18  2.24e-04    14s
+   9   0.00000000e+00 -1.85578875e+02  3.56e-01 4.72e-01  6.59e-05    15s
+  10   0.00000000e+00 -1.22104699e+01  9.03e-03 7.79e-19  4.15e-06    16s
+  11   0.00000000e+00 -1.21976248e-02  1.27e-04 3.29e-03  4.14e-09    17s
+  12   0.00000000e+00 -1.22388699e-05  1.35e-07 1.11e-08  4.15e-12    17s
+  13   0.00000000e+00 -1.22814427e-08  1.36e-10 3.93e-16  4.17e-15    18s
+  14   0.00000000e+00 -6.97269603e-12  3.48e-13 2.52e-16  4.29e-18    19s
+
+Barrier solved model in 14 iterations and 19.13 seconds (12.62 work units)
+Optimal objective 0.00000000e+00
+
+  Building initial crossover basis                                21s
+Concurrent spin time: 0.15s
+
+Solved with primal simplex
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+  114798    0.0000000e+00   0.000000e+00   0.000000e+00     25s
+
+Root relaxation: objective 0.000000e+00, 114798 iterations, 19.75 seconds (11.84 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 3734          -    0.00000      -     -  117s
+     0     0    0.00000    0 4605          -    0.00000      -     -  247s
+     0     0    0.00000    0 4771          -    0.00000      -     -  410s
+     0     0    0.00000    0 4876          -    0.00000      -     -  863s
+     0     0    0.00000    0 5016          -    0.00000      -     - 1257s
+     0     0    0.00000    0 5013          -    0.00000      -     - 1779s
+     0     0    0.00000    0 5013          -    0.00000      -     - 1886s
+     0     2    0.00000    0 5013          -    0.00000      -     - 2447s
+     1     4    0.00000    1 4785          -    0.00000      -  4194 2505s
+     3     6    0.00000    2 4852          -    0.00000      -  9615 3152s
+     5     8    0.00000    3 4449          -    0.00000      - 14789 3773s
+     7    12    0.00000    4 4637          -    0.00000      - 12384 4248s
+    11    26    0.00000    5 4703          -    0.00000      - 14789 5236s
+    27    98    0.00000   16 4751          -    0.00000      -  8610 5326s
+   115   159    0.00000   29 4616          -    0.00000      -  5529 5562s
+   202   213    0.00000   42 4547          -    0.00000      -  6744 5674s
+   290   277    0.00000   55 4523          -    0.00000      -  5844 5762s
+   378   334    0.00000   64 4528          -    0.00000      -  5336 5882s
+   465   392    0.00000   77 4429          -    0.00000      -  5059 5988s
+   553   454 infeasible   85               -    0.00000      -  4862 6078s
+   641   512    0.00000   96 4396          -    0.00000      -  4705 6182s
+   729   562    0.00000  104 4425          -    0.00000      -  4704 6283s
+   811   615    0.00000  119 4376          -    0.00000      -  4708 6376s
+   898   655    0.00000  129 4272          -    0.00000      -  4601 6455s
+   986   702    0.00000  140 4243          -    0.00000      -  4434 6527s
+  1074   753    0.00000  153 4175          -    0.00000      -  4326 6619s
+  1159   807    0.00000  164 4116          -    0.00000      -  4281 6694s
+  1247   857 infeasible  172               -    0.00000      -  4222 6777s
+  1329   901    0.00000  186 3933          -    0.00000      -  4199 6843s
+  1418   902    0.00000  175 5013          -    0.00000      -  4116 8880s
+  1420   903    0.00000  141 4698          -    0.00000      -  4110 9270s
+
+Error: Your job was terminated because it exceeded the maximum allotted memory for a job.
+
+Please refer to the NEOS Server FAQ (https://neos-guide.org/content/FAQ) for more information regarding job termination conditions and potential solutions.
+
+NEOS Server Home
+
